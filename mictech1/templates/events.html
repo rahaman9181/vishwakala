@@ -1,0 +1,87 @@
+{% extends 'home.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Hepta+Slab:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top  navbar-expand-sm "style="background-color:#000099;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand"  data-toggle="modal" data-target="#myModal" >Techno MIC 2K19</a>
+    </div>
+    <ul class="nav navbar-nav">
+     <li><a href="C:\Users\goutham\Desktop\vishwakala\base.html">Home</a></li>
+      <li><a href="C:\Users\goutham\Desktop\vishwakala\events.html">Events</a></li>
+      <li><a href="C:\Users\goutham\Desktop\vishwakala\Registrations.html">Registration</a></li>
+      <li><a href="C:\Users\goutham\Desktop\vishwakala\contact.html">Contact Us</a></li>
+
+    </ul>
+  </div>
+</nav>
+<br>
+<br>
+
+{% block content %}
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+     <img src='{% static "techno.jpg" %}'  class="img-rounded center-block" width="100%" height="100%">
+	</div>
+        </div>
+      </div>
+
+    </div>
+<h1 style="font-family: 'Pacifico', cursive; color:red "  align="center" font size="10"><font size="15">Events</font></h1>
+<ul>
+  <li><h4 style="font-family: 'Hepta Slab', serif; color:purple" >Innovative Idea Contest</h4></li>
+  <li><h4 style="font-family: 'Hepta Slab', serif; color:green">Tech Intellect</h4></li>
+  <li><h4 style="font-family: 'Hepta Slab', serif; color:#F32B00">Mosaic</h4></li>
+  <li><h4 style="font-family: 'Hepta Slab', serif; color:#F3947F ">Best Out of Waste</h4></li>
+  <li><h4 style="font-family: 'Hepta Slab', serif; color:blue">Tech Hunt</h4></li>
+  <li><h4 style="font-family: 'Hepta Slab', serif; color:black">Brain Burst</h4></li>
+  <li><h4 style="font-family: 'Hepta Slab', serif; color:#843D2E">Puzzle Endeavour</h4></li>
+  <li><h4 style="font-family: 'Hepta Slab', serif; color:magenta">Tech Tree</h4></li>
+</ul>
+<h2 style="font-family: 'Modak', cursive; color:purple"><font size="10">Innovative Idea Contest</font></h2>
+<p style="font-family: 'Roboto Mono', monospace;"><font size="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Innovative idea contest gives the students a chance to showcase their ideas based on real time problems based on the given set of themes given.</font></p>
+<h4 align="right">This is some text in a paragraph.</h4>
+
+<h2 style="font-family: 'Modak', cursive; color:green"><font size="10">Tech Intellect</font></h2>
+<p style="font-family: 'Roboto Mono', monospace;"><font size="6">For Tech Intellect....</p>
+
+<h2 style="font-family: 'Modak', cursive; color:#F32B00"><font size="10">Mosaic</font></h2>
+<p style="font-family: 'Roboto Mono', monospace;"><font size="6">For Mosaic....</p>
+
+<h2 style="font-family: 'Modak', cursive; color:#F3947F"><font size="10">Best Out of Waste</font></h2>
+<p style="font-family: 'Roboto Mono', monospace;"><font size="6">For Best Out of Waste....</p>
+
+<h2 style="font-family: 'Modak', cursive; color:blue"><font size="10">Tech Hunt</font></h2>
+<p style="font-family: 'Roboto Mono', monospace;"><font size="6">For Tech Hunt....</p>
+
+<h2 style="font-family: 'Modak', cursive; color:black"><font size="10">Brain Burst</font></h2>
+<p style="font-family: 'Roboto Mono', monospace;"><font size="6">For Brain Burst....</p>
+
+<h2 style="font-family: 'Modak', cursive; color:#843D2E"><font size="10">Puzzle Endeavour</font></h2>
+<p style="font-family: 'Roboto Mono', monospace;"><font size="6">For Puzzle Endeavour....</p>
+
+<h2 style="font-family: 'Modak', cursive; color:magenta"><font size="10">Tech Intellect</font></h2>
+<p style="font-family: 'Roboto Mono', monospace;"><font size="6">For Tech Tree....</p>
+
+{% endblock %}
+</body>
+</html>

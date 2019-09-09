@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<body background="">
+<nav class="navbar navbar-inverse navbar-fixed-top  navbar-expand-sm " style="background-color:#000099;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand"  data-toggle="modal" data-target="#myModal" >Techno MIC 2K19</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="C:\Users\goutham\Desktop\vishwakala\base.html">Home</a></li>
+      <li><a href="C:\Users\goutham\Desktop\vishwakala\events.html">Events</a></li>
+      <li><a href="C:\Users\goutham\Desktop\vishwakala\Registrations.html">Registration</a></li>
+      <li><a href="C:\Users\goutham\Desktop\vishwakala\contact.html">Contact Us</a></li>
+
+    </ul>
+  </div>
+</nav>
+<br>
+<br>
+
+{% block content %}
+<div class="row">
+<div class="col-md-12">
+<h1 style="font-family: 'Indie Flower' 'cursive'; "align="center">Scan This For Registration</h1>
+<center><img src='{% static "qrcode.png" %}'  class="img-rounded center-block" width="20%" height="40%"></center>
+<center>(OR)</center>
+<h1 style="font-family: 'Indie Flower', cursive;"align="center">Click Below</h1>
+ <a href="https://forms.gle/A1s8DMcf3SWTgVVS8" style=" color:red" align="text-align:center"><font size="5"><center>Register Now</center></font></a>
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+     <img src='{% static "techno.jpg" %}'  class="img-rounded center-block" width="100%" height="100%">
+		</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    {% endblock %}
+	</body>
+</html>
